@@ -1,0 +1,54 @@
+commit fd61f83d79e55700401ab4b35db0e6f02348e633
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 11 01:08:08 2022 +0000
+
+    Reports were created and stored
+
+commit d303944d535ce41a264e127aae3b942424f50dfe
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Mon Jan 10 19:39:56 2022 +0000
+
+    Built a program with output file
+
+commit 138230cfcd8f918fb93e6a29be5de2016190646b
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Mon Jan 10 00:36:06 2022 +0000
+
+    Tried kfold but couldn't OOM
+
+commit 50521aff219ceac5188af90f20cf3e2751ff7c56
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Fri Jan 7 03:51:07 2022 +0000
+
+    Designed a working model
+
+commit b77bfadd48b5611352e04c8937e61a714f1b4b86
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 4 18:13:30 2022 +0000
+
+    Built a CNN model
+
+commit cd7b5e0c62be49f4f2240e2d4a7d62c4714c64fd
+Merge: 0b29589 4d894f1
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 4 13:20:56 2022 +0000
+
+    Merge branch 'main' of https://github.com/Tamizh2907/MachineLearningDriverdistraction
+
+commit 0b295891469bcfd97c8940c28a6beaf25d283ec1
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 4 13:19:34 2022 +0000
+
+    Training and Validation data split
+
+commit 4d894f1177e66137355c7d5c1c4c8ff5f4a7765a
+Author: Thamizhiniyan P <93538470+Tamizh2907@users.noreply.github.com>
+Date:   Mon Jan 3 16:27:50 2022 +0000
+
+    Create README.md
+
+commit 031732e52da90e7c43b00b1d931b7a4a58991888
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Mon Jan 3 16:25:54 2022 +0000
+
+    Initial commit
