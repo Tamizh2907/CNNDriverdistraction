@@ -194,7 +194,7 @@ testoutput.to_csv('Testoutput.csv', index = False, encoding='utf-8')
 
 # ### Conclusion
 
-# Thus, the prediction of test images from the model with the learning of training and validation images was successfully exported as a csv file with over 96% accuracy.
+# Thus, the prediction of test images from the model with the learning of training and validation images was successfully exported to a csv file with over 96% accuracy.
 
 # ### References
 
