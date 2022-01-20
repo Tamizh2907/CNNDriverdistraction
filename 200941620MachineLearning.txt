@@ -1,3 +1,39 @@
+commit eb6893022d32908b767b3bdef35f3c92c4171a63
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Mon Jan 17 06:39:51 2022 +0000
+
+    Refactoring done
+
+commit d7125a6d77c29468978d32c1f3c92723187207c7
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Sat Jan 15 20:13:26 2022 +0000
+
+    Corrected readme file
+
+commit e147a3e6ad18a3e3449f1a55e85ea1990ad49559
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Sat Jan 15 20:11:07 2022 +0000
+
+    Added readme file
+
+commit dffecd1fc8a5cb112f4c343cb3789324e1a6dc58
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Thu Jan 13 00:17:43 2022 +0000
+
+    Rerun the code to get pdf corrected
+
+commit 58f6f1efb60fd99eeddab60d09ced0d084f101dd
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 11 14:04:16 2022 +0000
+
+    Markdown was added in jupyter notebook
+
+commit d24ea67daa8996d11fc7ca954ae3fe81741adbc1
+Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
+Date:   Tue Jan 11 01:11:44 2022 +0000
+
+    Git log was edited
+
 commit fd61f83d79e55700401ab4b35db0e6f02348e633
 Author: Thamizhiniyan P <thamizhiniyan2907@gmail.com>
 Date:   Tue Jan 11 01:08:08 2022 +0000

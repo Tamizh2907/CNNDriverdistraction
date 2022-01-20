@@ -3,9 +3,11 @@
 
 # # Detection of distracted driver using Convolutional Neural Networks
 
+# ### Thamizhiniyan Pugazhenthi - 200941620
+
 # ### Introduction
 
-# In this project, the detection of distracted driver with Machine Learning using Convolutional Neural Networks was analysed and predicted.
+# Machine learning  is the study of computer algorithms that may improve themselves over time by gaining experience and using data. Machine learning algorithms create a model based on training data to make predictions or judgments without having to be explicitly programmed to do so. Like the description, we will build a model to detect the distracted driver with Machine Learning using Convolutional Neural Networks and train the model with the training and validation set before predict them with the test images given.
 
 # ### Dataset description
 
@@ -28,7 +30,7 @@
 
 # The libraries were imported to support our project. The assistance of tensorflow and keras is vital to proceed ahead. With matplot to plot charts and pandas to perform csv read and write operations.
 
-# In[2]:
+# In[43]:
 
 
 import os
@@ -105,7 +107,7 @@ validationset = trainingdataimage.flow_from_directory(trainingdirectory,
 # In[6]:
 
 
-history =  cnnmodel.fit(trainingset, epochs = 60, steps_per_epoch = len(trainingset), 
+history =  cnnmodel.fit(trainingset, epochs = 100, steps_per_epoch = len(trainingset), 
                              validation_data = validationset, verbose = 1, validation_steps = len(validationset))
 
 
@@ -113,7 +115,7 @@ history =  cnnmodel.fit(trainingset, epochs = 60, steps_per_epoch = len(training
 
 # The two plots were designed to visualize the learning curve of the model. One plot concentrated on Training and validation accuracy over 60 iterations and next one concentrated on training and validation loss.
 
-# In[8]:
+# In[7]:
 
 
 accuracy = history.history['accuracy']
@@ -142,7 +144,7 @@ plt.show()
 
 # Like training data, image generator were built for test data along with its directory. The important step of the project is the prediction of test images with the learning the CNN model has undergone with training and validation images.
 
-# In[9]:
+# In[8]:
 
 
 testparentdirectory = os.path.join(workingdir + '/state-farm-distracted-driver-detection/imgs/')
@@ -155,7 +157,7 @@ testoutput = cnnmodel.predict(testdata, verbose = 1)
 
 # The sample submission csv was read by pandas to prepare the format of output. With image and images name taken from the csv, the prediction values was replaced with the original value of csv in the same format and convert it to a dataframe to export it easily into a csv file.
 
-# In[10]:
+# In[9]:
 
 
 specimencsv = pd.read_csv(os.path.join(workingdir + '/state-farm-distracted-driver-detection/sample_submission.csv'))
@@ -164,7 +166,7 @@ for value in range(0,10):
     result['c' + str(value)] = list(testoutput[:,value])
 
 
-# In[11]:
+# In[10]:
 
 
 testoutput = pd.DataFrame(result)
@@ -174,12 +176,25 @@ testoutput = pd.DataFrame(result)
 
 # The number of images in each class were depicted with a bar plot.
 
-# In[12]:
+# In[45]:
 
 
 imagescsv = pd.read_csv(os.path.join(workingdir + '/state-farm-distracted-driver-detection/driver_imgs_list.csv'))
-imagescsv.classname.value_counts().plot(kind = 'bar', label = 'index')
+imagescsv.classname.value_counts().plot(kind = 'bar')
 plt.title('Number of images per class in training data')
+
+
+# In[35]:
+
+
+testvalue = testoutput[['c0', 'c1', 'c2', 'c3', 'c4', 'c5', 'c6', 'c7', 'c8', 'c9']].idxmax(axis = 1)
+
+
+# In[44]:
+
+
+testvalue.value_counts().plot(kind = 'bar')
+plt.title('Number of images per class in test data')
 
 
 # ### Preparing output file
@@ -194,7 +209,7 @@ testoutput.to_csv('Testoutput.csv', index = False, encoding='utf-8')
 
 # ### Conclusion
 
-# Thus, the prediction of test images from the model with the learning of training and validation images was successfully exported to a csv file with over 96% accuracy.
+# We built a model using Convolution Neural Networks with data augumentation, Batch Normalization and Dropout to increase the efficiency of the model. Thus, the prediction of test images from the model with the learning of training and validation images was successfully exported to a csv file with over 97% accuracy.
 
 # ### References
 
